@@ -1,0 +1,150 @@
+body /*применение css стиля ко всему что входит в тег*/ {
+background-color:#F5F5F5;
+color: #0f141e;
+
+font-size: 18px; /*Размер шрифта для всего что входит в тег body*/
+font-weight: normal; /*жирность шрифта*/
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+color: black;
+text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: dimgray;
+}
+
+.avatar /*обращение к классу - редактируем аватар*/ {
+    width: 300px;
+    border-radius: 50%; /*скругление краев*/
+    box-shadow: 20px -17px 20px 20px rgba(0, 0, 0, 0.25); /*тень от картинки*/
+}
+
+
+.info p {
+    color: #0f141e;
+    /* line-height: 50px;*/ /*интервал между строками*/
+    /* margin: 0;  */     /*отступы */
+    /* font-style: bold; начертание */
+    /* text-decoration: none; зачеркнутый, подчеркнутый... */
+    /* text-transform: none; все с маленькой буквы, все большие... */
+    /* letter-spacing: normal ; отступы между символами */
+    /* word-spacing: 42px; расстояние между сломами */
+}
+
+.container {
+    max-width: 1200px; /*адаптирование под экран*/
+    background-color: rgba(176, 196, 222);
+    margin: auto;
+    padding: 3pc;
+    
+}
+
+
+.card {
+    padding: 20px;
+    line-height: 40px;
+    /* background: firebrick; */
+    margin-bottom: 20px;
+    
+}
+.card h2 {
+    margin: 0;
+}
+
+.bg-about {
+    background: rgba(173, 216, 230);
+}
+
+.bg-skills {
+    background: rgba(176, 224, 230);
+}
+
+.bg-job {
+    background: rgba(175, 238, 238);
+}
+.card p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+}
+
+.table {
+    width: 100%;
+    border: 3px solid grey;
+    table-layout: fixed; 
+    border-collapse: collapse;
+  }
+  
+  .table th:nth-child(1), .table th:nth-child(2) {
+    width: 15%;
+}
+
+   .table th:nth-child(3) {
+    width: 10%;
+  }
+  .table th:nth-child(4) {
+    width: 60%;
+    
+  }
+
+.justify {
+    text-align: justify
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+     text-align: center; 
+    }
+
+    @media (max-width: 700px) {
+        .info {
+            text-align: center;
+            display: block;
+        }
+    }
+
+.info-text {
+    padding: 60px;
+    /* margin-right: 10px; */
+}
+
+.info-text h1 {
+margin-bottom: 70px;
+    }
+
+.info-text h2, .info-text p {
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    color: black;
+}
+.form-group input,
+.form-group textarea {
+    width: 50%;
+    padding: 15px 0 10px;
+    font-family: inherit;
+    /* background: transparent; */
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.btm {
+    color: black;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 10px;
+}
